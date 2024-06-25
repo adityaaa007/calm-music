@@ -17,9 +17,11 @@
 
 ## Screenshots 📸
 
-<img src="./src/assets/ss1.jpg" alt="Screenshot 1" width="200">
-<img src="./src/assets/ss2.jpg" alt="Screenshot 2" width="200">
-<img src="./src/assets/ss3.jpg" alt="Screenshot 3" width="200">
+<div style="display: flex; flex-direction: row; gap: 16px; padding: 16px 0;">
+  <img src="./src/assets/ss1.jpg" alt="Screenshot 1" width="200">
+  <img src="./src/assets/ss2.jpg" alt="Screenshot 2" width="200">
+  <img src="./src/assets/ss3.jpg" alt="Screenshot 3" width="200">
+</div>
 
 ## Contact 🚀
 
