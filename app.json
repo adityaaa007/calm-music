@@ -2,6 +2,27 @@
   "expo": {
     "name": "calm-music-app",
     "slug": "calm-music-app",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/calm-music-app-icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./src/assets/calm-music-app-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    }, 
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/calm-music-app-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.jack.sparrow221b.calmmusicapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "145565eb-6172-42de-9f78-671ea856fa6e"
+      }
+    }
   }
 }

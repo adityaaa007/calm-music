@@ -1,4 +1,4 @@
-rootProject.name = 'calmmusicapp'
+rootProject.name = 'calm-music-app'
 
 dependencyResolutionManagement {
   versionCatalogs {
