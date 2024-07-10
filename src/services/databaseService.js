@@ -1,5 +1,5 @@
-import client from "./appwriteService";
-import conf from "../conf/conf";
+import conf from "../conf/conf.js";
+import client from "./appwriteService.js";
 import { Databases } from "react-native-appwrite";
 
 export class DatabaseService {

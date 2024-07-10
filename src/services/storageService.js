@@ -1,6 +1,6 @@
 import { Storage } from "react-native-appwrite";
-import client from "./appwriteService";
-import conf from "../conf/conf";
+import client from "./appwriteService.js";
+import conf from "../conf/conf.js";
 
 export class StorageService {
   bucket;

@@ -2,7 +2,7 @@ import { View, Text, StatusBar, TouchableOpacity, Image } from "react-native";
 import React, { useState, useEffect, useRef } from "react";
 import { Video } from "expo-av";
 import { Play, SkipBack, SkipForward, Pause } from "lucide-react-native";
-import colors from "../constants/colors";
+import colors from "../constants/colors.js";
 import LinearGradient from "react-native-linear-gradient";
 import TrackPlayer, {
   Event,
@@ -65,7 +65,6 @@ const Player = ({ navigation, route }) => {
         title: genre.title,
         artist: "Aditya",
       }));
-      console.log("list: " + JSON.stringify(list));
       setAudioList(list);
     }
   }, []);
@@ -102,7 +101,6 @@ const Player = ({ navigation, route }) => {
 
           setPlayerInit(true);
 
-          console.log("imageList: " + JSON.stringify(imageList));
         }
       }
     })();
@@ -126,7 +124,6 @@ const Player = ({ navigation, route }) => {
       }
 
       if (event.type === Event.PlaybackActiveTrackChanged) {
-        console.log("track changed");
 
         // id of active track
         const currentTrackId = await TrackPlayer.getActiveTrack().then(

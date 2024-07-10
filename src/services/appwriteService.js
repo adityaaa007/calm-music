@@ -1,5 +1,5 @@
 import { Client } from "react-native-appwrite";
-import conf from "../conf/conf";
+import conf from "../conf/conf.js";
 
 const client = new Client();
 

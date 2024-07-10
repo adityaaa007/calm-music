@@ -23,6 +23,10 @@
   <img src="./src/assets/ss3.jpg" alt="Screenshot 3" width="200">
 </div>
 
+## Download link 🔗
+
+[Download the APK](https://drive.google.com/file/d/1mg92Or0XxZ9QbEhBxcuBVoiIht-KPm-W/view?usp=sharing)
+
 ## Contact 🚀
 
 For any inquiries or issues, please contact **anonymous00400@gmail.com**.

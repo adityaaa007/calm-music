@@ -1,9 +1,8 @@
 import { Text, View, StatusBar, FlatList, Image } from "react-native";
 import React, { useEffect, useState } from "react";
-import { Eye } from "lucide-react-native";
 import GenreCard from "../components/GenreCard";
 import { MotiView } from "moti";
-import databaseService from "../services/databaseService";
+import databaseService from "../services/databaseService.js";
 import LoaderKit from "react-native-loader-kit";
 import colors from "../constants/colors.js";
 
@@ -16,21 +15,6 @@ const Home = ({ navigation }) => {
       genres && setGenreList(genres);
     })();
   }, []);
-
-  const audioFiles = [
-    {
-      id: "Forest sounds",
-      url: require("../assets/forest-sounds.wav"),
-      title: "Forest sounds",
-      artist: "Aditya",
-    },
-    {
-      id: "Ocean Waves",
-      url: require("../assets/ocean-sounds.wav"),
-      title: "Ocean Waves",
-      artist: "Aditya",
-    },
-  ];
 
   return (
     <View className="flex bg-bg flex-1 p-4">
@@ -52,7 +36,7 @@ const Home = ({ navigation }) => {
           >
             Pick your type
           </Text>
-          <Eye color="white" size={24}></Eye>
+          {/* <Eye color="white" size={24}></Eye> */}
         </View>
 
         {genreList.length == 0 ? (
@@ -69,7 +53,6 @@ const Home = ({ navigation }) => {
               <GenreCard
                 data={item}
                 navigation={navigation}
-                audioFiles={audioFiles}
                 genreList={genreList}
               ></GenreCard>
             )}

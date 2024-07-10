@@ -1,17 +1,15 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React, { useEffect, useState } from "react";
 import { LinearGradient } from "react-native-linear-gradient";
-import storageService from "../services/storageService";
+import storageService from "../services/storageService.js";
 
-export default function GenreCard({ data, navigation, audioFiles, genreList }) {
+export default function GenreCard({ data, navigation, genreList }) {
   const [imageUrl, setImageUrl] = useState("");
   const [iconUrl, setIconUrl] = useState("");
-  const list = [];
 
   useEffect(() => {
     const imgUrl = storageService.getImage({ fileId: data.imageUrl });
     imgUrl && setImageUrl(String(imgUrl));
-    console.log(imgUrl);
 
     const icoUrl = storageService.getImage({ fileId: data.iconUrl });
     icoUrl && setIconUrl(String(icoUrl));
@@ -25,7 +23,6 @@ export default function GenreCard({ data, navigation, audioFiles, genreList }) {
           imageUrl,
           title: data.title,
           initialTrack: data.title,
-          audioFiles,
           genreList,
         });
       }}
